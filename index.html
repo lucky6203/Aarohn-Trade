@@ -34,7 +34,24 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-con {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-top: 0;
+  margin-bottom: 20px; /* niche ka gap */
+}
+    </style>
   </head>
+  
 
   <body>
     <!-- LOADER -->
@@ -45,7 +62,7 @@
       </div>
     </div>
       <!-- HEADER SECTION -->
-  <header class="w-100 float-left header-con main-box nav-bg position-relative">
+  <header class="w-100 float-left header-con main-box nav-bg position-absolute">
     <div class="wrapper">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
@@ -86,7 +103,7 @@
     </div>
   </header>
     <!-- BANNER SECTION -->
-    <section class="w-100 float-left banner-con position-relative padding-bottom main-box">
+    <section class="w-100 float-left banner-con position-relative margin-button-20px main-box">
       <figure><img class="img-fluid position-absolute vector-img1" src="assets/images/con1.png" alt="vector"></figure>
       <div class="wrapper">
         <div class="row">
@@ -103,11 +120,10 @@
             </div>
             <!-- col -->
           </div>
-          <div class="col-lg-6">
-            <div class="position-relative"><img src="assets/images/banner-vector-img.png"
-                class="position-absolute vector-img2" alt="banner-vector-img">
-            </div>
-            <!-- col -->
+          <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <figure class="mb-0 w-100 text-center wow bounceInUp" data-wow-duration="2s" style="z-index: 2; ">
+              <img src="assets/images/home page/Homepage_Image_1918x912 (1).png" class="img-fluid" alt="Aarohn Trade Overseas Banner" style="max-width: 100%; height:100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+            </figure>
           </div>
           <!-- row -->
         </div>
@@ -116,7 +132,7 @@
       <!-- banner-con -->
     </section>
     <!-- WE ARE THE BEST SECTION -->
-    <section class="w-100 float-left we-best-con position-relative text-center padding-top main-box">
+    <section class="w-100 float-left we-best-con position-relative text-center  main-box">
       <img class="img-fluid position-absolute vector-img3" src="assets/images/circle-vector.png" alt="vector">
       <div class="wrapper1200">
         <h2 class="wow bounceInUp" data-wow-duration="2s">Effortless Global <span class="d-inline-block blue-text">Trade</span>
@@ -158,14 +174,14 @@ Let us handle your international trade compliance, product sourcing, and seamles
       <!-- we-best-con -->
     </section>
     <!-- ABOUT SECTION -->
-    <section class="w-100 float-left about-silver-con position-relative padding-top145 padding-bottom130 main-box">
+    <!-- <section class="w-100 float-left about-silver-con position-relative padding-top145 padding-bottom130 main-box">
       <img class="img-fluid position-absolute vector-img4" src="assets/images/tri-con.png" alt="vector">
       <div class="wrapper1200">
         <div class="row sub-silver-con">
           <div class="col-lg-6">
             <figure class="position-relative silver-img"><img src="assets/images/about-silver-img.png"
                 class="position-absolute wow bounceInUp" data-wow-duration="2s" alt="about-img"></figure>
-            <!-- col-lg-6 -->
+            col-lg-6
           </div>
           <div class="col-lg-6">
             <h2 class="wow bounceInUp" data-wow-duration="2s">About Aarohn<span
@@ -185,7 +201,7 @@ Aarohn is a premier export-import partner specialising in global sourcing, logis
 
                 </ul>
 
-                <!-- vm-inner -->
+                vm-inner
               </div>
               <div class="vm-inner1 float-left mr-0 wow bounceInUp" data-wow-duration="2s">
                 <h3 class="">Our <span class="d-inline-block blue-text">Mission</span></h3>
@@ -194,21 +210,21 @@ Aarohn is a premier export-import partner specialising in global sourcing, logis
                       alt="check-icon">To simplify global commerce by providing robust market insights, navigating regulatory hurdles, and delivering risk-mitigated supply chain solutions.</li>
                  
                 </ul>
-                <!-- vm-inner -->
+                vm-inner
               </div>
-              <!-- about vm con -->
+              about vm con
             </div>
             <div class="navy-btn d-inline-block wow bounceInUp" data-wow-duration="2s">
               <a href="about.html" class="d-inline-block">Read More</a>
             </div>
-            <!-- col-lg-6 -->
+            col-lg-6
           </div>
-          <!-- row -->
+          row
         </div>
-        <!-- wrapper1200 -->
+        wrapper1200
       </div>
-      <!-- about section -->
-    </section>
+      about section
+    </section> -->
     <!-- GROWTH SERVICES SECTION -->
     <section
       class="float-left w-100 growth-services-con position-relative padding-top115 padding-bottom105 main-box light-blue-bg">
@@ -287,70 +303,62 @@ Aarohn is a premier export-import partner specialising in global sourcing, logis
               <div class="item">
                 <div class="project-box">
                   <span class="d-block item-span">01</span>
-                  <h3>Management Corporate</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>
-                  <figure class="prj-img">
-                    <img src="assets/images/projct-img1.png" class="img-fluid" alt="project-img">
+                  <h3>DGFT</h3>
+                  <p>Registered with the Directorate General of Foreign Trade, Ministry of Commerce, Government of India, ensuring fully compliant and authorized global trade operations.</p>
+                  <figure class="prj-img" style="height: 180px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 15px; border-radius: 8px;">
+                    <img src="assets/images/Authorities/DGFT474x232.png" class="img-fluid" alt="DGFT Logo" style="max-height: 100%; width: auto; object-fit: contain;">
                   </figure>
-                  <a href="project.html" class="explore-link">Explore Now</a>
-                  <div class="arrow">
-                    <a href="single-project.html"><i class="fa-solid fa-chevron-right"></i></a>
-                  </div>
-                   project box 
                 </div>
-                <!-- item -->
               </div>
-             <div class="item">
+              <div class="item">
                 <div class="project-box">
                   <span class="d-block item-span">02</span>
-                  <h3>Business Monitor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>
-                  <figure class="prj-img">
-                    <img src="assets/images/projct-img2.png" class="img-fluid" alt="project-img">
+                  <h3>APEDA</h3>
+                  <p>Certified member of the Agricultural and Processed Food Products Export Development Authority, promoting the export of premium Indian agricultural goods.</p>
+                  <figure class="prj-img" style="height: 180px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 15px; border-radius: 8px;">
+                    <img src="assets/images/Authorities/Apeda 474x232.png" class="img-fluid" alt="APEDA Logo" style="max-height: 100%; width: auto; object-fit: contain;">
                   </figure>
-                  <a href="project.html" class="explore-link">Explore Now</a>
-                  <div class="arrow">
-                    <a href="single-project.html"><i class="fa-solid fa-chevron-right"></i></a>
-                  </div>
-                  <!-- project box -->
                 </div>
-                <!-- item -->
               </div>
-               <div class="item">
+              <div class="item">
                 <div class="project-box">
                   <span class="d-block item-span">03</span>
-                  <h3>Brand Recognition</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>
-                  <figure class="prj-img">
-                    <img src="assets/images/projct-img3.png" class="img-fluid" alt="project-img">
+                  <h3>FSSAI</h3>
+                  <p>Fully compliant with the Food Safety and Standards Authority of India, guaranteeing the highest levels of safety, quality, hygiene, and strict packaging regulations.</p>
+                  <figure class="prj-img" style="height: 180px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 15px; border-radius: 8px;">
+                    <img src="assets/images/Authorities/FSSAI 474x232.png" class="img-fluid" alt="FSSAI Logo" style="max-height: 100%; width: auto; object-fit: contain;">
                   </figure>
-                  <a href="project.html" class="explore-link">Explore Now</a>
-                  <div class="arrow">
-                    <a href="single-project.html"><i class="fa-solid fa-chevron-right"></i></a>
-                  </div>
-                  <!-- project box -->
                 </div>
-                <!-- item -->
               </div>
-             <div class="item">
+              <div class="item">
                 <div class="project-box">
                   <span class="d-block item-span">04</span>
-                  <h3>Building business From Scratch</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio.</p>
-                  <figure class="prj-img">
-                    <img src="assets/images/projct-img4.png" class="img-fluid" alt="project-img">
+                  <h3>Export Inspection Council</h3>
+                  <p>Adhering to Export Inspection Council standards, implementing rigorous quality assurance and pre-shipment inspections to meet global criteria.</p>
+                  <figure class="prj-img" style="height: 180px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 15px; border-radius: 8px;">
+                    <img src="assets/images/Authorities/EIC logo.png" class="img-fluid" alt="EIC Logo" style="max-height: 100%; width: auto; object-fit: contain;">
                   </figure>
-                  <a href="project.html" class="explore-link">Explore Now</a>
-                  <div class="arrow">
-                    <a href="single-project.html"><i class="fa-solid fa-chevron-right"></i></a>
-                  </div>
-                  <!-- project box -->
                 </div>
-                <!-- item -->
+              </div>
+              <div class="item">
+                <div class="project-box">
+                  <span class="d-block item-span">05</span>
+                  <h3>Phytosanitary Certification</h3>
+                  <p>Ensuring plant products comply with strict phytosanitary requirements, certifying agricultural shipments are free from regulated pests and diseases.</p>
+                  <figure class="prj-img" style="height: 180px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 15px; border-radius: 8px;">
+                    <img src="assets/images/Authorities/Phytosanitary Certification 474 x 232.png" class="img-fluid" alt="Phytosanitary Certification Logo" style="max-height: 100%; width: auto; object-fit: contain;">
+                  </figure>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-box">
+                  <span class="d-block item-span">06</span>
+                  <h3>Importer Exporter Code</h3>
+                  <p>Authorized with a valid Importer Exporter Code (IEC) from DGFT, enabling smooth customs clearance and seamless cross-border trade operations.</p>
+                  <figure class="prj-img" style="height: 180px; display: flex; align-items: center; justify-content: center; background: #fff; padding: 15px; border-radius: 8px;">
+                    <img src="assets/images/Authorities/IEC Logo474x232.png" class="img-fluid" alt="IEC Logo" style="max-height: 100%; width: auto; object-fit: contain;">
+                  </figure>
+                </div>
               </div>
               <!-- owl carousel -->
             </div>
@@ -385,7 +393,7 @@ Aarohn is a premier export-import partner specialising in global sourcing, logis
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
                   style="max-width:85%">
-                  <span class="title">85%</span>
+                  <span class="title"></span>
                   <!-- progress bar -->
                 </div>
                 <!-- progress -->
@@ -394,7 +402,7 @@ Aarohn is a premier export-import partner specialising in global sourcing, logis
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"
                   style="max-width:93%">
-                  <span class="title">93%</span>
+                  <span class="title"></span>
                   <!-- progress bar -->
                 </div>
                 <!-- progress -->
@@ -403,7 +411,7 @@ Aarohn is a premier export-import partner specialising in global sourcing, logis
               <div class="progress mb-0">
                 <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"
                   style="max-width:67%">
-                  <span class="title">67%</span>
+                  <span class="title"></span>
                   <!-- progress bar -->
                 </div>
                 <!-- progress -->

@@ -2297,3 +2297,31 @@
         height: 230px;
     }
 }
+
+/* Custom Mobile View Navbar and Hero Fixes */
+@media (max-width: 991px) {
+    .header-con {
+        background-color: #ffffff !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+    }
+    .navbar-collapse.collapse,
+    .navbar-collapse.collapsing {
+        top: 89px !important;
+    }
+    .banner-con {
+        padding-top: 130px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-con {
+        padding-top: 120px !important;
+        padding-bottom: 40px !important;
+    }
+    .banner-con .banner-wrap1 .generic-btn,
+    .banner-con .banner-wrap1 .navy-btn {
+        display: inline-block !important;
+        margin: 6px 10px !important;
+    }
+}

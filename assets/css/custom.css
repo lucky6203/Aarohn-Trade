@@ -1819,3 +1819,44 @@ span.blue-text {
     bottom: 779px;
     right: 111px;
 }
+
+/* PRODUCT CARD STYLING */
+.product-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 12, 54, 0.1) !important;
+}
+.product-card img {
+    transition: transform 0.5s ease;
+}
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+/* FILTER PILL BUTTON STYLING */
+.filter-pill {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    background: #f1f8fb;
+    border: 1px solid #dcf5ff;
+    border-radius: 30px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+.filter-pill:hover {
+    color: var(--primary--color);
+    background: #e6f7ff;
+    border-color: var(--primary--color);
+    transform: translateY(-2px);
+}
+.filter-pill.active {
+    color: #fff !important;
+    background: var(--primary--color);
+    border-color: var(--primary--color);
+    box-shadow: 0 4px 12px rgba(0, 162, 232, 0.3);
+}

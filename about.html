@@ -34,7 +34,46 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-con {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      margin-top: 0;
+      margin-bottom: 20px; /* niche ka gap */
+    }
+
+    .sub-banner-con.about-banner {
+      height: auto !important;
+    }
+
+    .about-silver-con .about-vm-con .vm-inner1 {
+      width: 48% !important;
+      float: left !important;
+    }
+
+    .about-silver-con .about-vm-con .vm-inner1.var {
+      margin-right: 4% !important;
+    }
+
+    @media (max-width: 575px) {
+      .about-silver-con .about-vm-con .vm-inner1 {
+        width: 100% !important;
+        float: none !important;
+        margin-right: 0 !important;
+        margin-bottom: 25px;
+      }
+    }
+  </style>
 
   <body>
     <!-- LOADER -->
@@ -87,36 +126,51 @@
     </div>
   </header>
     <!-- Sub BANNER SECTION -->
-    <section class="w-100 float-left sub-banner-con d-table position-relative about-banner main-box">
-      <img class="img-fluid position-absolute vector-img1" src="assets/images/con1.png" alt="vector">
-      <img class="img-fluid position-absolute about-banner-con1" src="assets/images/about-banner-con1.png" alt="vector">
-      <img class="img-fluid position-absolute about-banner-con2" src="assets/images/about-banner-con2.png" alt="vector">
-      <img class="img-fluid position-absolute about-banner-con3" src="assets/images/about-banner-con3.png" alt="vector">
-      <div class="d-table-cell align-middle">
-        <div class="wrapper">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="about-sub-iner-con">
-                <h1 class="text-uppercase">About <span class="d-inline-block blue-text">Us</span></h1>
-                <p class="special-text mb-0">Welcome to Aarohn Trade Overseas, a premier B2B export-import company dedicated to delivering high-quality agricultural products and commodities to the global market.</p>
-                <!-- about sub iner con -->
-              </div>
-              <!-- col -->
-            </div>
-            <div class="col-lg-6">
-              <img src="assets/images/about-pg-banner-img.png" class="position-absolute con3" alt="banner-vector-img">
-              <!-- col -->
-            </div>
-            <!-- row -->
-          </div>
-          <!-- container -->
-        </div>
-        <!-- table cell -->
+<section class="w-100 float-left sub-banner-con position-relative about-banner main-box"
+  style="padding:80px 0; overflow:hidden; margin-top:90px;">
+
+  <img class="img-fluid position-absolute vector-img1"
+    src="assets/images/con1.png" alt="vector">
+
+  <img class="img-fluid position-absolute about-banner-con1"
+    src="assets/images/about-banner-con1.png" alt="vector">
+
+  <img class="img-fluid position-absolute about-banner-con2"
+    src="assets/images/about-banner-con2.png" alt="vector">
+
+  <img class="img-fluid position-absolute about-banner-con3"
+    src="assets/images/about-banner-con3.png" alt="vector">
+
+  <div class="wrapper">
+    <div class="row align-items-center">
+
+      <!-- Text -->
+      <div class="col-lg-6">
+        <h1 class="text-uppercase mb-4">
+          About <span class="d-inline-block blue-text">Us</span>
+        </h1>
+
+        <p class="special-text mb-0">
+          Welcome to Aarohn Trade Overseas, a premier B2B export-import
+          company dedicated to delivering high-quality agricultural products
+          and commodities to the global market.
+        </p>
       </div>
-      <!-- sub-banner-con -->
-    </section>
+
+      <!-- Image -->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <img
+          src="assets/images/About Image_847x480.png"
+          alt="banner-vector-img"
+          style="width:100%; max-width:550px; height:auto; display:block; margin:auto;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <!-- WE ARE THE BEST SECTION -->
-    <section class="w-100 float-left we-best-con position-relative text-center padding-top145  main-box">
+    <section class="w-100 float-left we-best-con position-relative text-center padding-top60  main-box">
       <div class="wrapper1200">
         <h2 class="wow bounceInUp" data-wow-duration="2s">We Are The <span class="d-inline-block blue-text">Best</span>
         </h2>
@@ -211,8 +265,10 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
               </div>
               <!-- about vm con -->
             </div>
-            <div class="navy-btn d-inline-block wow bounceInUp" data-wow-duration="2s">
-              <a href="about.html" class="d-inline-block">Read More</a>
+            <div class="text-center w-100 float-left mt-4">
+              <div class="navy-btn d-inline-block wow bounceInUp" data-wow-duration="2s">
+                <a href="about.html" class="d-inline-block">Read More</a>
+              </div>
             </div>
             <!-- col-lg-6 -->
           </div>
@@ -242,7 +298,7 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
                   style="max-width:85%">
-                  <span class="title">100%</span>
+                  <span class="title"></span>
                   <!-- progress bar -->
                 </div>
                 <!-- progress -->
@@ -251,7 +307,7 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"
                   style="max-width:93%">
-                  <span class="title">98%</span>
+                  <span class="title"></span>
                   <!-- progress bar -->
                 </div>
                 <!-- progress -->
@@ -260,7 +316,7 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
               <div class="progress mb-0">
                 <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"
                   style="max-width:67%">
-                  <span class="title">99%</span>
+                  <span class="title"></span>
                   <!-- progress bar -->
                 </div>
                 <!-- progress -->

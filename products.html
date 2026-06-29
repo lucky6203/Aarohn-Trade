@@ -34,6 +34,23 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-con {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      margin-top: 0;
+      margin-bottom: 20px;
+      /* niche ka gap */
+    }
+  </style>
 </head>
 
 <body>
@@ -50,7 +67,8 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
           <figure class="mb-0">
-            <img src="assets/images/logo_icon.png" alt="Aarohn Trade Overseas Logo" style="height:90px; width:auto; max-width:120px; object-fit:contain; display:block; margin-top:-10px;">
+            <img src="assets/images/logo_icon.png" alt="Aarohn Trade Overseas Logo"
+              style="height:90px; width:auto; max-width:120px; object-fit:contain; display:block; margin-top:-10px;">
           </figure>
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -87,93 +105,1356 @@
   </header>
 
   <!-- Sub BANNER SECTION -->
-  <section class="w-100 float-left sub-banner-con d-table position-relative about-banner main-box">
+  <section class="w-100 float-left sub-banner-con position-relative about-banner main-box" style="padding:80px 0; overflow:hidden; margin-top:90px; height:auto;">
     <img class="img-fluid position-absolute vector-img1" src="assets/images/con1.png" alt="vector">
     <img class="img-fluid position-absolute about-banner-con1" src="assets/images/about-banner-con1.png" alt="vector">
     <img class="img-fluid position-absolute about-banner-con2" src="assets/images/about-banner-con2.png" alt="vector">
     <img class="img-fluid position-absolute about-banner-con3" src="assets/images/about-banner-con3.png" alt="vector">
-    <div class="d-table-cell align-middle">
-      <div class="wrapper">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-sub-iner-con">
-              <h1 class="text-uppercase">Our <span class="d-inline-block blue-text">Products</span></h1>
-              <p class="special-text mb-0">Premium agricultural commodities sourced directly from the finest producers in India and delivered globally with absolute quality assurance.</p>
+    <div class="wrapper">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-sub-iner-con">
+            <h1 class="text-uppercase">Our <span class="d-inline-block blue-text">Products</span></h1>
+            <p class="special-text mb-3">Premium agricultural commodities sourced directly from the finest producers in India and delivered globally with absolute quality assurance.</p>
+            
+            <!-- Quick highlights -->
+            <div class="d-flex flex-wrap mt-3" style="gap: 10px;">
+              <div class="d-flex align-items-center p-2 px-3 mb-2" style="background: rgba(0, 123, 255, 0.08); border-radius: 8px; border: 1px solid rgba(0, 123, 255, 0.15);">
+                <i class="fa-solid fa-leaf mr-2 text-primary" style="font-size: 16px;"></i>
+                <div>
+                  <div style="font-size: 10px; text-transform: uppercase; font-weight: 700; color: #555; line-height: 1;">Origin</div>
+                  <strong style="font-size: 12px; color: #00186e;">100% Indian</strong>
+                </div>
+              </div>
+              <div class="d-flex align-items-center p-2 px-3 mb-2" style="background: rgba(0, 123, 255, 0.08); border-radius: 8px; border: 1px solid rgba(0, 123, 255, 0.15);">
+                <i class="fa-solid fa-shield-halved mr-2 text-primary" style="font-size: 16px;"></i>
+                <div>
+                  <div style="font-size: 10px; text-transform: uppercase; font-weight: 700; color: #555; line-height: 1;">Quality</div>
+                  <strong style="font-size: 12px; color: #00186e;">SGS Certified</strong>
+                </div>
+              </div>
+              <div class="d-flex align-items-center p-2 px-3 mb-2" style="background: rgba(0, 123, 255, 0.08); border-radius: 8px; border: 1px solid rgba(0, 123, 255, 0.15);">
+                <i class="fa-solid fa-truck-ramp-box mr-2 text-primary" style="font-size: 16px;"></i>
+                <div>
+                  <div style="font-size: 10px; text-transform: uppercase; font-weight: 700; color: #555; line-height: 1;">Supply</div>
+                  <strong style="font-size: 12px; color: #00186e;">Bulk Export</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="mt-4">
+              <a href="#productsGridList" class="btn btn-primary mr-3" style="font-weight:600; padding:10px 24px; border-radius:30px; box-shadow: 0 4px 10px rgba(0,123,255,0.25);">Explore Catalog</a>
+              <a href="contact.html" class="btn btn-outline-primary" style="font-weight:600; padding:10px 24px; border-radius:30px; border-color:#007bff; color:#007bff; background:transparent;">Get Bulk Quote</a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <img src="assets/images/product_packaging/packaging_catalogue.png" class="position-absolute con3" alt="banner-vector-img">
-          </div>
+        </div>
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img src="assets/images/product_packaging/packaging_catalogue.png" class="img-fluid" alt="Product Packaging Catalogue" style="max-width: 520px; height: auto; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); display: inline-block;">
         </div>
       </div>
     </div>
   </section>
 
   <!-- PRODUCT PORTFOLIO SECTION -->
-  <section class="w-100 float-left about-silver-con position-relative padding-top145 padding-bottom130 main-box">
+  <section class="w-100 float-left about-silver-con position-relative padding-bottom130 main-box"
+    style="background:#fdfdfd; padding-top: 50px !important;">
     <img class="img-fluid position-absolute vector-img4" src="assets/images/tri-con.png" alt="vector">
     <div class="wrapper1200">
-      <div class="row sub-silver-con align-items-center mb-5">
-        <div class="col-lg-6">
-          <figure class="position-relative silver-img">
-            <img src="assets/images/product_packaging/spices_15kg_jutebags.png" class="wow bounceInUp" data-wow-duration="2s" alt="Aromatic Spices" style="max-width: 100%; height: auto; border-radius: 8px;">
-          </figure>
-        </div>
-        <div class="col-lg-6">
-          <h2 class="wow bounceInUp" data-wow-duration="2s">Aromatic & Pure <span class="d-inline-block blue-text">Spices</span></h2>
-          <p class="wow bounceInUp" data-wow-duration="2s">
-            India is world-renowned for its spices, and we source only the highest grade whole and powdered spices. Our collection undergoes stringent laboratory testing to ensure zero contamination, perfect moisture content, and rich essential oil retention.
+
+      <!-- INTRO TITLE -->
+      <div class="row mb-5 text-center">
+        <div class="col-12">
+          <h2 class="wow bounceInUp" data-wow-duration="2s">Interactive B2B <span
+              class="d-inline-block blue-text">Product Hub</span></h2>
+          <p class="wow bounceInUp text-center mx-auto" data-wow-duration="2s"
+            style="max-width:800px; font-size:16px; line-height:1.8; color:#555;">
+            Explore our extensive catalog of certified, premium-grade agricultural exports. Sourced directly from local
+            farmers and processed under globally certified food safety standards, each commodity is graded and packed
+            securely for transoceanic hauling.
           </p>
-          <ul class="list-unstyled p-0 wow bounceInUp" data-wow-duration="2s" style="font-size: 15px; line-height: 2;">
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Turmeric (High Curcumin content)</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Black Pepper (Malabar & Tellicherry grades)</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Cumin Seeds & Coriander Seeds</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Red Chili (Guntur, Byadgi, Kashmiri)</li>
-          </ul>
         </div>
       </div>
 
-      <div class="row sub-silver-con align-items-center mb-5">
-        <div class="col-lg-6 order-lg-2">
-          <figure class="position-relative silver-img">
-            <img src="assets/images/product_packaging/Lentils_Packaging_15kg_jutebags.png" class="wow bounceInUp" data-wow-duration="2s" alt="Pulses & Lentils" style="max-width: 100%; height: auto; border-radius: 8px;">
-          </figure>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <h2 class="wow bounceInUp" data-wow-duration="2s">Premium Pulses & <span class="d-inline-block blue-text">Lentils</span></h2>
-          <p class="wow bounceInUp" data-wow-duration="2s">
-            We export a wide variety of protein-rich pulses and lentils, processed in state-of-the-art facilities. Our sorting and grading processes ensure uniform grain size, high purity index, and excellent cooking qualities.
-          </p>
-          <ul class="list-unstyled p-0 wow bounceInUp" data-wow-duration="2s" style="font-size: 15px; line-height: 2;">
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Red Lentils (Masoor Dal / Whole Masoor)</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Chickpeas (Kabuli & Desi Chickpeas)</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Mung Beans (Green Gram & Split Mung)</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Pigeon Peas (Toor Dal / Arhar Dal)</li>
-          </ul>
-        </div>
-      </div>
+      <!-- FILTER AND SEARCH CONTROL BAR -->
+      <div class="row mb-5 wow bounceInUp" data-wow-duration="2s">
+        <div class="col-12">
+          <div class="card p-3 border-0"
+            style="border-radius:12px; background:#fff; box-shadow:0 10px 30px rgba(0,12,54,0.05);">
+            <div class="row align-items-center">
 
-      <div class="row sub-silver-con align-items-center">
-        <div class="col-lg-6">
-          <figure class="position-relative silver-img">
-            <img src="assets/images/product_packaging/product_packaging.png" class="wow bounceInUp" data-wow-duration="2s" alt="Seeds & Grains" style="max-width: 100%; height: auto; border-radius: 8px;">
-          </figure>
-        </div>
-        <div class="col-lg-6">
-          <h2 class="wow bounceInUp" data-wow-duration="2s">Nutritious Seeds & <span class="d-inline-block blue-text">Grains</span></h2>
-          <p class="wow bounceInUp" data-wow-duration="2s">
-            From the finest long-grain Basmati Rice to high-quality oilseeds, we cater to bulk food industries and global supermarket chains with customized packaging and certified organic and conventional standards.
-          </p>
-          <ul class="list-unstyled p-0 wow bounceInUp" data-wow-duration="2s" style="font-size: 15px; line-height: 2;">
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Premium Basmati & Non-Basmati Rice</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Sesame Seeds (Natural & Hulled Auto-Sorted)</li>
-            <li class="position-relative d-flex align-items-center"><img src="assets/images/check-icon.png" alt="check" class="mr-2">Mustard Seeds & Fenugreek Seeds</li>
-          </ul>
-          <div class="navy-btn d-inline-block mt-4 wow bounceInUp" data-wow-duration="2s">
-            <a href="contact.html" class="d-inline-block">Request a Free Quote</a>
+              <!-- Category Filter Pills -->
+              <div class="col-xl-9 col-lg-12 col-md-12 mb-3 mb-xl-0">
+                <div class="d-flex flex-wrap align-items-center" style="gap:10px;" id="filterPillsWrapper">
+                  <a href="#" class="filter-pill active" data-filter="all">All Products</a>
+                  <a href="#" class="filter-pill" data-filter="whole-spices">Whole Spices</a>
+                  <a href="#" class="filter-pill" data-filter="powdered-spices">Powdered Spices</a>
+                  <a href="#" class="filter-pill" data-filter="whole-pulses">Whole Pulses</a>
+                  <a href="#" class="filter-pill" data-filter="split-pulses">Split Dals</a>
+                  <a href="#" class="filter-pill" data-filter="grains-seeds">Grains & Seeds</a>
+                </div>
+              </div>
+
+              <!-- Real-time Search Box -->
+              <div class="col-xl-3 col-lg-12 col-md-12">
+                <div class="position-relative">
+                  <input type="text" id="productSearch" class="form-control" placeholder="Search by name or HSN..."
+                    style="padding-left:40px; padding-right:15px; height:46px; border-radius:30px; border:1px solid #dee2e6; font-size:14px;">
+                  <i class="fa-solid fa-magnifying-glass position-absolute"
+                    style="left:16px; top:16px; color:#aaa;"></i>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- PRODUCTS DYNAMIC GRID -->
+      <div class="wow bounceInUp" data-wow-duration="2s">
+        <div class="row pt-3" id="productsGridList">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="black pepper (garbled) kali mirch 0904 11 30 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/black_pepper.jpg" class="card-img-top w-100 h-100"
+                  alt="Black Pepper (Garbled)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Black Pepper (Garbled)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Kali Mirch</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0904
+                      11 30</span>
+                  </div>
+                  <a href="contact.html?product=Black%20Pepper%20Garbled"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="dry red chilli (whole) sukhi lal mirch 0904 21 10 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Dry_red_chilli.jpg" class="card-img-top w-100 h-100"
+                  alt="Dry Red Chilli (Whole)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Dry Red Chilli (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Sukhi Lal Mirch</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0904
+                      21 10</span>
+                  </div>
+                  <a href="contact.html?product=Dry%20Red%20Chilli%20Whole"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="cinnamon bark dalchini 0906 11 10 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Cinnamon Bark.jpg" class="card-img-top w-100 h-100"
+                  alt="Cinnamon Bark" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Cinnamon Bark</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Dalchini</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0906
+                      11 10</span>
+                  </div>
+                  <a href="contact.html?product=Cinnamon%20Bark" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="cloves (whole) laung 0907 10 20 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Cloves (Whole).jpg" class="card-img-top w-100 h-100"
+                  alt="Cloves (Whole)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Cloves (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Laung</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0907
+                      10 20</span>
+                  </div>
+                  <a href="contact.html?product=Cloves%20Whole" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="cardamom (small green) choti elaichi 0908 31 20 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Cardamom Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Cardamom (Small Green)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Cardamom (Small Green)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Choti Elaichi</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0908
+                      31 20</span>
+                  </div>
+                  <a href="contact.html?product=Cardamom%20Small%20Green"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="nutmeg (whole) jaiphal (whole) 0908 11 20 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Nutmeg (Whole).jpg" class="card-img-top w-100 h-100"
+                  alt="Nutmeg (Whole)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Nutmeg (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Jaiphal (Whole)</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0908
+                      11 20</span>
+                  </div>
+                  <a href="contact.html?product=Nutmeg%20Whole" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="coriander seeds sabut dhania 0909 21 90 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Coriander Seeds.jpg" class="card-img-top w-100 h-100"
+                  alt="Coriander Seeds" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Coriander Seeds</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Sabut Dhania</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0909
+                      21 90</span>
+                  </div>
+                  <a href="contact.html?product=Coriander%20Seeds" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="cumin seeds (other than black) jeera 0909 31 29 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Cumin Seeds (Other than Black).jpg"
+                  class="card-img-top w-100 h-100" alt="Cumin Seeds (Other than Black)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Cumin Seeds (Other than Black)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Jeera</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0909
+                      31 29</span>
+                  </div>
+                  <a href="contact.html?product=Cumin%20Seeds%20Other%20than%20Black"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="star anise (whole) chakra phool 0909 61 29 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Star Anise (Whole).jpg" class="card-img-top w-100 h-100"
+                  alt="Star Anise (Whole)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Star Anise (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Chakra Phool</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0909
+                      61 29</span>
+                  </div>
+                  <a href="contact.html?product=Star%20Anise%20Whole"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="fennel seeds saunf 0909 61 39 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Fennel Seeds.jpg" class="card-img-top w-100 h-100"
+                  alt="Fennel Seeds" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Fennel Seeds</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Saunf</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0909
+                      61 39</span>
+                  </div>
+                  <a href="contact.html?product=Fennel%20Seeds" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="turmeric (dried whole) sabut haldi 0910 30 20 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Turmeric (Dried Whole).jpg"
+                  class="card-img-top w-100 h-100" alt="Turmeric (Dried Whole)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Turmeric (Dried Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Sabut Haldi</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0910
+                      30 20</span>
+                  </div>
+                  <a href="contact.html?product=Turmeric%20Dried%20Whole"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="ginger (dried) sonth 0910 11 20 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Ginger (Dried).jpg" class="card-img-top w-100 h-100"
+                  alt="Ginger (Dried)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Ginger (Dried)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Sonth</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0910
+                      11 20</span>
+                  </div>
+                  <a href="contact.html?product=Ginger%20Dried" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-spices"
+              data-keywords="dried fenugreek leaves kasuri methi 0910 99 90 whole spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Dried Fenugreek Leaves.jpg"
+                  class="card-img-top w-100 h-100" alt="Dried Fenugreek Leaves"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Dried Fenugreek Leaves</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Kasuri Methi</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0910
+                      99 90</span>
+                  </div>
+                  <a href="contact.html?product=Dried%20Fenugreek%20Leaves"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="black pepper powder kali mirch powder 0904 12 00 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Black Pepper Powder.jpg"
+                  class="card-img-top w-100 h-100" alt="Black Pepper Powder"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Black Pepper Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Kali Mirch Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0904
+                      12 00</span>
+                  </div>
+                  <a href="contact.html?product=Black%20Pepper%20Powder"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="chilli powder lal mirch powder 0904 22 11 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Chilli Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Chilli Powder" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Chilli Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Lal Mirch Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0904
+                      22 11</span>
+                  </div>
+                  <a href="contact.html?product=Chilli%20Powder" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="cinnamon powder dalchini powder 0906 20 00 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Cinnamon Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Cinnamon Powder" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Cinnamon Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Dalchini Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0906
+                      20 00</span>
+                  </div>
+                  <a href="contact.html?product=Cinnamon%20Powder" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="clove powder laung powder 0907 20 00 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Clove Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Clove Powder" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Clove Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Laung Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0907
+                      20 00</span>
+                  </div>
+                  <a href="contact.html?product=Clove%20Powder" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="nutmeg powder jaiphal powder 0908 12 00 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Nutmeg Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Nutmeg Powder" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Nutmeg Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Jaiphal Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0908
+                      12 00</span>
+                  </div>
+                  <a href="contact.html?product=Nutmeg%20Powder" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="cardamom powder elaichi powder 0908 32 10 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Cardamom Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Cardamom Powder" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Cardamom Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Elaichi Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0908
+                      32 10</span>
+                  </div>
+                  <a href="contact.html?product=Cardamom%20Powder" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="coriander powder dhania powder 0909 22 00 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Coriander Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Coriander Powder" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Coriander Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Dhania Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0909
+                      22 00</span>
+                  </div>
+                  <a href="contact.html?product=Coriander%20Powder"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="powdered-spices"
+              data-keywords="cumin powder jeera powder 0909 32 00 powdered spice"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Cumin Powder.jpg" class="card-img-top w-100 h-100"
+                  alt="Cumin Powder" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Powdered
+                  Spices</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Cumin Powder</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Jeera Powder</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0909
+                      32 00</span>
+                  </div>
+                  <a href="contact.html?product=Cumin%20Powder" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="red lentils (whole) masoor whole 0713 40 00 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Red Lentils (Whole).jpg"
+                  class="card-img-top w-100 h-100" alt="Red Lentils (Whole)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Red Lentils (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Masoor Whole</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      40 00</span>
+                  </div>
+                  <a href="contact.html?product=Red%20Lentils%20Whole"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="pigeon peas (whole) toor / arhar whole 0713 60 00 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Pigeon Peas (Whole).jpg"
+                  class="card-img-top w-100 h-100" alt="Pigeon Peas (Whole)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Pigeon Peas (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Toor / Arhar Whole</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      60 00</span>
+                  </div>
+                  <a href="contact.html?product=Pigeon%20Peas%20Whole"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="black gram (whole) urad whole (sabut) 0713 31 10 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Black Gram (Whole).jpg" class="card-img-top w-100 h-100"
+                  alt="Black Gram (Whole)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Black Gram (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Urad Whole (Sabut)</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      31 10</span>
+                  </div>
+                  <a href="contact.html?product=Black%20Gram%20Whole"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="green gram (whole) moong whole (sabut) 0713 31 90 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Green Gram (Whole).jpg" class="card-img-top w-100 h-100"
+                  alt="Green Gram (Whole)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Green Gram (Whole)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Moong Whole (Sabut)</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      31 90</span>
+                  </div>
+                  <a href="contact.html?product=Green%20Gram%20Whole"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="chickpeas (garbanzo) kabuli chana 0713 20 10 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Chickpeas (Garbanzo).jpg"
+                  class="card-img-top w-100 h-100" alt="Chickpeas (Garbanzo)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Chickpeas (Garbanzo)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Kabuli Chana</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      20 10</span>
+                  </div>
+                  <a href="contact.html?product=Chickpeas%20Garbanzo"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="chickpeas (desi) kala chana / bengal gram 0713 20 20 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Chickpeas (Desi).jpg" class="card-img-top w-100 h-100"
+                  alt="Chickpeas (Desi)" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Chickpeas (Desi)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Kala Chana / Bengal Gram
+                </p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      20 20</span>
+                  </div>
+                  <a href="contact.html?product=Chickpeas%20Desi" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="kidney beans rajma 0713 33 00 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Kidney Beans.jpg" class="card-img-top w-100 h-100"
+                  alt="Kidney Beans" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Kidney Beans</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Rajma</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      33 00</span>
+                  </div>
+                  <a href="contact.html?product=Kidney%20Beans" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="whole-pulses"
+              data-keywords="black eyed peas lobia / cow peas 0713 35 00 whole pulses"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Black Eyed Peas.jpg" class="card-img-top w-100 h-100"
+                  alt="Black Eyed Peas" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Whole
+                  Pulses</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Black Eyed Peas</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Lobia / Cow Peas</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      35 00</span>
+                  </div>
+                  <a href="contact.html?product=Black%20Eyed%20Peas"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="split-pulses"
+              data-keywords="split red lentils masoor dal (split) 0713 90 10 split dals"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Split Red Lentils.jpg" class="card-img-top w-100 h-100"
+                  alt="Split Red Lentils" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Split
+                  Dals</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Split Red Lentils</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Masoor Dal (Split)</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      90 10</span>
+                  </div>
+                  <a href="contact.html?product=Split%20Red%20Lentils"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="split-pulses"
+              data-keywords="split pigeon peas toor / arhar dal 0713 90 10 split dals"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Split Pigeon Peas.jpg" class="card-img-top w-100 h-100"
+                  alt="Split Pigeon Peas" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Split
+                  Dals</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Split Pigeon Peas</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Toor / Arhar Dal</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      90 10</span>
+                  </div>
+                  <a href="contact.html?product=Split%20Pigeon%20Peas"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="split-pulses"
+              data-keywords="split black gram (with skin) urad chilka 0713 90 10 split dals"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Split Black Gram (With Skin).jpg"
+                  class="card-img-top w-100 h-100" alt="Split Black Gram (With Skin)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Split
+                  Dals</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Split Black Gram (With Skin)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Urad Chilka</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      90 10</span>
+                  </div>
+                  <a href="contact.html?product=Split%20Black%20Gram%20With%20Skin"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="split-pulses"
+              data-keywords="split black gram (husked / white) urad dhuli 0713 90 10 split dals"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Split Black Gram (Husked  White).jpg"
+                  class="card-img-top w-100 h-100" alt="Split Black Gram (Husked / White)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Split
+                  Dals</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Split Black Gram (Husked / White)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Urad Dhuli</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      90 10</span>
+                  </div>
+                  <a href="contact.html?product=Split%20Black%20Gram%20Husked%20%20White"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="split-pulses"
+              data-keywords="split green gram (with skin) moong chilka 0713 90 10 split dals"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Split Green Gram (With Skin).jpg"
+                  class="card-img-top w-100 h-100" alt="Split Green Gram (With Skin)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Split
+                  Dals</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Split Green Gram (With Skin)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Moong Chilka</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      90 10</span>
+                  </div>
+                  <a href="contact.html?product=Split%20Green%20Gram%20With%20Skin"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="split-pulses"
+              data-keywords="split green gram (husked / yellow) moong dhuli 0713 90 10 split dals"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Split Green Gram (Husked  Yellow).jpg"
+                  class="card-img-top w-100 h-100" alt="Split Green Gram (Husked / Yellow)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Split
+                  Dals</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Split Green Gram (Husked / Yellow)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Moong Dhuli</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      90 10</span>
+                  </div>
+                  <a href="contact.html?product=Split%20Green%20Gram%20Husked%20%20Yellow"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="split-pulses"
+              data-keywords="split bengal gram chana dal 0713 20 20 split dals"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Split Bengal Gram.jpg" class="card-img-top w-100 h-100"
+                  alt="Split Bengal Gram" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Split
+                  Dals</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Split Bengal Gram</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Chana Dal</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0713
+                      20 20</span>
+                  </div>
+                  <a href="contact.html?product=Split%20Bengal%20Gram"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="grains-seeds"
+              data-keywords="basmati & non-basmati rice premium long grain rice 1006 30 20 grains"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Basmati & Non-Basmati Rice.jpg"
+                  class="card-img-top w-100 h-100" alt="Basmati & Non-Basmati Rice"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Grains
+                  & Seeds</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Basmati & Non-Basmati Rice</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Premium Long Grain Rice
+                </p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">1006
+                      30 20</span>
+                  </div>
+                  <a href="contact.html?product=Basmati%20%20NonBasmati%20Rice"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="grains-seeds"
+              data-keywords="sesame seeds (natural & hulled) til 1207 40 90 seeds"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Sesame Seeds (Natural & Hulled).jpg"
+                  class="card-img-top w-100 h-100" alt="Sesame Seeds (Natural & Hulled)"
+                  style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Grains
+                  & Seeds</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Sesame Seeds (Natural & Hulled)</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Til</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">1207
+                      40 90</span>
+                  </div>
+                  <a href="contact.html?product=Sesame%20Seeds%20Natural%20%20Hulled"
+                    class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="grains-seeds"
+              data-keywords="mustard seeds sarso / rai 1207 50 00 seeds"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Mustard Seeds.jpg" class="card-img-top w-100 h-100"
+                  alt="Mustard Seeds" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Grains
+                  & Seeds</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Mustard Seeds</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Sarso / Rai</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">1207
+                      50 00</span>
+                  </div>
+                  <a href="contact.html?product=Mustard%20Seeds" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 d-flex align-items-stretch product-item-col">
+            <div class="card w-100 product-card border-0" data-category="grains-seeds"
+              data-keywords="fenugreek seeds methi seeds 0910 99 12 seeds"
+              style="border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.06); transition:all 0.3s ease; background:#fff;">
+              <div class="position-relative" style="height:170px; overflow:hidden; background:#f4f6f9;">
+                <img src="assets/images/product_img/product_img/Fenugreek Seeds.jpg" class="card-img-top w-100 h-100"
+                  alt="Fenugreek Seeds" style="object-fit:cover; transition:transform 0.5s ease;">
+                <span class="position-absolute badge badge-primary"
+                  style="top:12px; left:12px; background:#007bff; font-weight:600; padding:6px 12px; border-radius:30px; font-size:11px; text-transform:uppercase;">Grains
+                  & Seeds</span>
+              </div>
+              <div class="card-body d-flex flex-column p-3">
+                <h5 class="card-title mb-1"
+                  style="font-size:16px; font-weight:700; color:#333; line-height:1.3; font-family:'Oswald', sans-serif;">
+                  Fenugreek Seeds</h5>
+                <p class="card-text text-muted mb-2" style="font-size:13px; font-style:italic;">Methi Seeds</p>
+                <div class="mt-auto pt-2 border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span style="font-size:12px; color:#666; font-weight:500;">HSN Code:</span>
+                    <span class="badge"
+                      style="background:#e8f0fe; color:#1a73e8; font-weight:700; font-size:13px; padding:4px 8px;">0910
+                      99 12</span>
+                  </div>
+                  <a href="contact.html?product=Fenugreek%20Seeds" class="btn btn-outline-primary btn-block btn-sm mt-3"
+                    style="border-color:#007bff; color:#007bff; font-weight:600; border-radius:6px; padding:6px 12px; font-size:12px;">Enquire
+                    Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -202,7 +1483,8 @@
             <img src="assets/images/footer_logo.png" alt="logo" class="img-fluid" style="width:140px; height:auto;">
           </figure>
           <p class="mb-0">
-            Aarohn Trade Overseas is a leading B2B supplier and exporter of agricultural products, delivering premium quality spices, grains, and lentils globally.
+            Aarohn Trade Overseas is a leading B2B supplier and exporter of agricultural products, delivering premium
+            quality spices, grains, and lentils globally.
           </p>
         </div>
         <div class="col-lg-4 wow bounceInUp" data-wow-duration="2s">
@@ -226,9 +1508,12 @@
           <div class="get-in-touch-con">
             <h4>Get In Touch</h4>
             <ul class="list-unstyled p-0">
-              <li class="position-relative"><i class="fa-solid fa-location-dot"></i> Aarohn Trade Overseas Private Limited<br>F-94 Ground Floor,<br>Kirti Nagar,<br>New Delhi - 110015</li>
-              <li class="position-relative"><i class="fa-solid fa-envelope"></i> <a href="mailto:sales@aarohn.com">sales@aarohn.com</a></li>
-              <li class="position-relative mb-0"><i class="fa-solid fa-phone"></i> <a href="tel:+919999050937">+91 9999050937</a></li>
+              <li class="position-relative"><i class="fa-solid fa-location-dot"></i> Aarohn Trade Overseas Private
+                Limited<br>F-94 Ground Floor,<br>Kirti Nagar,<br>New Delhi - 110015</li>
+              <li class="position-relative"><i class="fa-solid fa-envelope"></i> <a
+                  href="mailto:sales@aarohn.com">sales@aarohn.com</a></li>
+              <li class="position-relative mb-0"><i class="fa-solid fa-phone"></i> <a href="tel:+919999050937">+91
+                  9999050937</a></li>
             </ul>
           </div>
         </div>
@@ -265,6 +1550,52 @@
   <script>
     new WOW().init();
   </script>
+
+  <script>
+    (function () {
+      const searchInput = document.getElementById('productSearch');
+      const filterPills = document.querySelectorAll('.filter-pill');
+      const productCols = document.querySelectorAll('.product-item-col');
+
+      let activeCategory = 'all';
+      let searchQuery = '';
+
+      function filterProducts() {
+        productCols.forEach(col => {
+          const card = col.querySelector('.product-card');
+          const category = card.getAttribute('data-category');
+          const keywords = card.getAttribute('data-keywords').toLowerCase();
+
+          const categoryMatches = (activeCategory === 'all' || category === activeCategory);
+          const searchMatches = keywords.includes(searchQuery);
+
+          if (categoryMatches && searchMatches) {
+            col.style.setProperty('display', 'flex', 'important');
+            col.style.setProperty('visibility', 'visible', 'important');
+            col.style.setProperty('opacity', '1', 'important');
+          } else {
+            col.style.setProperty('display', 'none', 'important');
+          }
+        });
+      }
+
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', function (e) {
+          e.preventDefault();
+          filterPills.forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          activeCategory = this.getAttribute('data-filter');
+          filterProducts();
+        });
+      });
+
+      searchInput.addEventListener('input', function () {
+        searchQuery = this.value.toLowerCase().trim();
+        filterProducts();
+      });
+    })();
+  </script>
 </body>
+
 
 </html>
