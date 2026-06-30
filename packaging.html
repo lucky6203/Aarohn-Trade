@@ -104,29 +104,121 @@
   </header>
 
   <!-- Sub BANNER SECTION -->
-  <section class="w-100 float-left sub-banner-con d-table position-relative about-banner main-box">
-    <img class="img-fluid position-absolute vector-img1" src="assets/images/con1.png" alt="vector">
-    <img class="img-fluid position-absolute about-banner-con1" src="assets/images/about-banner-con1.png" alt="vector">
-    <img class="img-fluid position-absolute about-banner-con2" src="assets/images/about-banner-con2.png" alt="vector">
-    <img class="img-fluid position-absolute about-banner-con3" src="assets/images/about-banner-con3.png" alt="vector">
-    <div class="d-table-cell align-middle">
-      <div class="wrapper">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-sub-iner-con">
-              <h1 class="text-uppercase">Packaging & <span class="d-inline-block blue-text">Compliance</span></h1>
-              <p class="special-text mb-0">High-grade packaging, strict quality assurance protocols, and custom private
-                labeling to preserve purity, extend shelf life, and comply with target country import regulations.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 text-center mt-4 mt-lg-0">
-            <img src="assets/images/product_packaging/product_packaging.png" class="img-fluid" alt="Product Packaging Showcase" style="max-width: 520px; height: auto; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); display: inline-block;">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+ <style>
+/* ================= Desktop ================= */
+/* Desktop */
+.about-banner{
+    margin-top:0;
+}
 
+/* Mobile & Tablet */
+@media (max-width:991px){
+
+    .sub-banner-con{
+        display:block !important;
+        height:auto !important;
+        min-height:auto !important;
+        padding-top:130px !important;
+        padding-bottom:40px !important;
+    }
+
+    .sub-banner-con .d-table-cell{
+        display:block !important;
+    }
+
+    .about-sub-iner-con{
+        text-align:center;
+        margin-bottom:30px;
+    }
+
+    .about-sub-iner-con h1{
+        font-size:34px !important;
+        line-height:1.2;
+    }
+
+    .special-text{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .col-lg-6 img{
+        max-width:100% !important;
+        height:auto !important;
+    }
+}
+
+@media (max-width:576px){
+
+    .sub-banner-con{
+        padding-top:150px !important;
+    }
+
+    .about-sub-iner-con h1{
+        font-size:28px !important;
+    }
+
+    .special-text{
+        font-size:15px;
+    }
+}
+</style>
+
+<section class="w-100 float-left sub-banner-con d-table position-relative about-banner main-box">
+
+    <img class="img-fluid position-absolute vector-img1"
+         src="assets/images/con1.png" alt="vector">
+
+    <img class="img-fluid position-absolute about-banner-con1"
+         src="assets/images/about-banner-con1.png" alt="vector">
+
+    <img class="img-fluid position-absolute about-banner-con2"
+         src="assets/images/about-banner-con2.png" alt="vector">
+
+    <img class="img-fluid position-absolute about-banner-con3"
+         src="assets/images/about-banner-con3.png" alt="vector">
+
+    <div class="d-table-cell align-middle">
+
+        <div class="wrapper">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <div class="about-sub-iner-con">
+
+                        <h1 class="text-uppercase">
+                            Packaging &
+                            <span class="d-inline-block blue-text">Compliance</span>
+                        </h1>
+
+                        <p class="special-text mb-0">
+                            High-grade packaging, strict quality assurance protocols,
+                            and custom private labeling to preserve purity,
+                            extend shelf life, and comply with target country
+                            import regulations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+
+                    <img src="assets/images/product_packaging/product_packaging.png"
+                         class="img-fluid"
+                         alt="Product Packaging Showcase"
+                         style="max-width:520px;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.15);">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
   <!-- PACKAGING & COMPLIANCE SECTION -->
   <section class="w-100 float-left about-silver-con position-relative padding-top145 padding-bottom130 main-box">
     <img class="img-fluid position-absolute vector-img4" src="assets/images/tri-con.png" alt="vector">
@@ -198,8 +290,7 @@
     <div class="newsletter-bar d-flex align-items-center wow bounceInUp" data-wow-duration="2s">
       <img src="assets/images/footer-vector.png" class="img-fluid" alt="icon">
       <div class="float-left w-100">
-        <h3>Signup Our newsletter to get update <br>
-          information, news, insight or promotions.</h3>
+        <h3>Get a Custom Quote for Your Sourcing and Logistics Requirements.</h3>
       </div>
       <form action="javascript:;">
         <div class="form-group mb-0 position-relative">
@@ -230,8 +321,7 @@
             </ul>
             <ul class="list-unstyled p-0 d-inline-block float-left var2">
               <li><a href="packaging.html">Packaging</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="reviews.html">Reviews</a></li>
+           
               <li class="mb-0"><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
