@@ -1860,3 +1860,19 @@ span.blue-text {
     border-color: var(--primary--color);
     box-shadow: 0 4px 12px rgba(0, 162, 232, 0.3);
 }
+
+@media (min-width: 992px) {
+    .banner-con .banner-img-wrap {
+        padding-top: 45px;
+        align-items: stretch !important;
+    }
+    .banner-con .banner-img-wrap figure {
+        height: 100%;
+        width: 100%;
+    }
+    .banner-con .banner-img-wrap img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+}
