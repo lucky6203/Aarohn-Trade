@@ -998,6 +998,9 @@ span.blue-text {
 /* FOOTER SECTION */
 .footer-con {
     background-color: var(--primary--color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .footer-con .newsletter-bar {
@@ -1862,17 +1865,45 @@ span.blue-text {
 }
 
 @media (min-width: 992px) {
-    .banner-con .banner-img-wrap {
+    .banner-con .banner-img-wrap,
+    .sub-banner-con .banner-img-wrap {
         padding-top: 45px;
         align-items: stretch !important;
     }
-    .banner-con .banner-img-wrap figure {
+    .banner-con .banner-img-wrap figure,
+    .sub-banner-con .banner-img-wrap figure {
         height: 100%;
         width: 100%;
     }
-    .banner-con .banner-img-wrap img {
+    .banner-con .banner-img-wrap img,
+    .sub-banner-con .banner-img-wrap img {
         height: 100% !important;
         width: 100% !important;
         object-fit: cover !important;
+    }
+}
+
+/* Products Page Custom Hero Buttons Sizing */
+.product-hero-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product-hero-btns a:first-child {
+    margin-right: 16px;
+}
+@media (max-width: 991px) {
+    .product-hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+    .product-hero-btns a {
+        min-width: 190px;
+        text-align: center;
+    }
+    .product-hero-btns a:first-child {
+        margin-right: 0;
     }
 }
