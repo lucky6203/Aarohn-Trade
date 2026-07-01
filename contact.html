@@ -36,20 +36,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
   <style>
     body {
-  margin: 0;
-  padding: 0;
-}
+      margin: 0;
+      padding: 0;
+    }
 
-.header-con {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  margin-top: 0;
-  margin-bottom: 20px; /* niche ka gap */
-}
-    </style>
+    .header-con {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      margin-top: 0;
+      margin-bottom: 20px;
+      /* niche ka gap */
+    }
+
+    @media (min-width: 992px) {
+      .sub-banner-con.about-banner {
+        display: block !important;
+        height: auto !important;
+        padding-top: 170px !important;
+        padding-bottom: 70px !important;
+        margin-top: 0 !important;
+      }
+
+      .sub-banner-con.about-banner .d-table-cell {
+        display: block !important;
+      }
+
+      .sub-banner-con.about-banner .about-sub-iner-con {
+        padding-top: 45px !important;
+      }
+
+      .get-intouch-con.padding-top145 {
+        padding-top: 75px !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -61,13 +84,14 @@
     </div>
   </div>
   <!-- <div class="sub-banner-bg-wrapper"> -->
-    <!-- HEADER SECTION -->
+  <!-- HEADER SECTION -->
   <header class="w-100 float-left header-con main-box nav-bg position-absolute">
     <div class="wrapper">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
           <figure class="mb-0">
-            <img src="assets/images/logo_icon.png" alt="Aarohn Trade Overseas Logo" style="height:90px; width:auto; max-width:120px; object-fit:contain; display:block; margin-top:-10px;">
+            <img src="assets/images/logo_icon.png" alt="Aarohn Trade Overseas Logo"
+              style="height:90px; width:auto; max-width:120px; object-fit:contain; display:block; margin-top:-10px;">
           </figure>
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -114,16 +138,17 @@
           <div class="col-lg-6">
             <div class="about-sub-iner-con">
               <h1 class="text-uppercase">Contact <span class="d-inline-block blue-text">Us</span></h1>
-              <p class="special-text mb-0">Duis aute irure dolor in repre henderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatucepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
-                molli.</p>
+              <p class="special-text mb-0">Connecting global markets requires seamless execution and absolute compliance. Get in touch with 
+                Aarohn Trade Overseas to discuss your sourcing, logistics, and import-export requirements, our team is ready to streamline your international supply chain.
+</p>
               <!-- about sub iner con -->
             </div>
             <!-- col -->
           </div>
-          <div class="col-lg-6">
-            <img src="assets/images/contact-banner-image.png" class="position-absolute con3" alt="banner-vector-img">
-            <!-- col -->
+          <div class="col-lg-6 d-flex align-items-center justify-content-center banner-img-wrap mt-4 mt-lg-0">
+            <figure class="mb-0 w-100 text-center wow bounceInUp" data-wow-duration="2s" style="z-index: 2; ">
+              <img src="assets/images/ContactUs_878x500 (1).png" class="img-fluid" alt="Contact Us" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+            </figure>
           </div>
           <!-- row -->
         </div>
@@ -143,9 +168,9 @@
           <div class="get-intouch-inner-con wow bounceInUp" data-wow-duration="2s">
             <h2>Get In <span class="d-inline-block blue-text">Touch</span>
             </h2>
-            <p class="text-size-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p class="text-size-14">Drop us a message and our 
+              international trade specialists will review your requirements and get back to you within 24 hours.
+</p>
             <form method="post" id="contactpage">
               <div class="row">
                 <div class="col-12">
@@ -179,7 +204,8 @@
         <div class="col-lg-5 col-md-6">
           <div class="contact-info wow bounceInUp" data-wow-duration="2s">
             <h2>Contact Info </h2>
-            <p class="text-size-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            <p class="text-size-14">Reach out to our team via the channels below. We are ready to assist with your sourcing, shipping, and trade requirements.
+</p>
             <ul class="list-unstyled p-0 info-details mb-0">
               <li class="position-relative"><i class="fa-solid fa-paper-plane"></i>
                 <div class="sub-info-inner">
@@ -198,7 +224,8 @@
               <li class="position-relative mb-0"><i class="fa-solid fa-location-arrow"></i>
                 <div class="sub-info-inner">
                   <h4>Address</h4>
-                  <p class="mb-0 sub-p"> Aarohn Trade Overseas Private Limited F-94 Ground Floor, Kirti Nagar, New Delhi - 110015,India,</p>
+                  <p class="mb-0 sub-p"> Aarohn Trade Overseas Private Limited F-94 Ground Floor, Kirti Nagar, New Delhi
+                    - 110015,India,</p>
                   <!-- sub info inner -->
                 </div>
               </li>
@@ -235,13 +262,15 @@
       </iframe>
       <div class="iframe-bg-img position-absolute">
         <ul class="list-unstyled p-0">
-          <li class="position-relative"><i class="fa-solid fa-phone"></i> <a href="tel:+91 9999050937">+91 9999050937</a></li>
+          <li class="position-relative"><i class="fa-solid fa-phone"></i> <a href="tel:+91 9999050937">+91
+              9999050937</a></li>
           <li class="position-relative"><i class="fa-solid fa-envelope"></i> <a
               href="mailto:sales@aarohn.com">sales@aarohn.com</a></li>
-          <li class="position-relative mb-0"><i class="fa-solid fa-location-dot"></i> Aarohn Trade Overseas Private Limited
-F-94 Ground Floor,
-Kirti Nagar,
-New Delhi - 110015</li>
+          <li class="position-relative mb-0"><i class="fa-solid fa-location-dot"></i> Aarohn Trade Overseas Private
+            Limited
+            F-94 Ground Floor,
+            Kirti Nagar,
+            New Delhi - 110015</li>
         </ul>
       </div>
 
@@ -253,19 +282,16 @@ New Delhi - 110015</li>
   </div>
   <!-- SPACER -->
   <div class="spacer"></div>
-    <!-- FOOTER SECTION -->
+  <!-- FOOTER SECTION -->
   <section class="float-left w-100 footer-con position-relative padding-top main-box">
     <div class="newsletter-bar d-flex align-items-center wow bounceInUp" data-wow-duration="2s">
       <img src="assets/images/Request_A_quote.png" class="img-fluid" alt="icon">
       <div class="float-left w-100">
         <h3>Get a Custom Quote for Your Sourcing and Logistics Requirements.</h3>
       </div>
-      <form action="javascript:;">
-        <div class="form-group mb-0 position-relative">
-          <input type="text" class="form_style" placeholder="Email" name="email">
-          <button>Sign Up</button>
-        </div>
-      </form>
+      <div class="newsletter-btn">
+        <a href="contact.html">Contact Us</a>
+      </div>
     </div>
     <div class="wrapper1200">
       <div class="row footer-inner-con wow bounceInUp" data-wow-duration="2s">
@@ -274,7 +300,8 @@ New Delhi - 110015</li>
             <img src="assets/images/footer_logo.png" alt="logo" class="img-fluid" style="width:140px; height:auto;">
           </figure>
           <p class="mb-0">
-            Aarohn Trade Overseas is a leading B2B supplier and exporter of agricultural products, delivering premium quality spices, grains, and lentils globally.
+            Aarohn Trade Overseas is a leading B2B supplier and exporter of agricultural products, delivering premium
+            quality spices, grains, and lentils globally.
           </p>
         </div>
         <div class="col-lg-4 wow bounceInUp" data-wow-duration="2s">
@@ -288,7 +315,7 @@ New Delhi - 110015</li>
             </ul>
             <ul class="list-unstyled p-0 d-inline-block float-left var2">
               <li><a href="packaging.html">Packaging</a></li>
-              
+
               <li class="mb-0"><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -297,9 +324,12 @@ New Delhi - 110015</li>
           <div class="get-in-touch-con">
             <h4>Get In Touch</h4>
             <ul class="list-unstyled p-0">
-              <li class="position-relative"><i class="fa-solid fa-location-dot"></i> Aarohn Trade Overseas Private Limited<br>F-94 Ground Floor,<br>Kirti Nagar,<br>New Delhi - 110015</li>
-              <li class="position-relative"><i class="fa-solid fa-envelope"></i> <a href="mailto:sales@aarohn.com">sales@aarohn.com</a></li>
-              <li class="position-relative mb-0"><i class="fa-solid fa-phone"></i> <a href="tel:+919999050937">+91 9999050937</a></li>
+              <li class="position-relative"><i class="fa-solid fa-location-dot"></i> Aarohn Trade Overseas Private
+                Limited<br>F-94 Ground Floor,<br>Kirti Nagar,<br>New Delhi - 110015</li>
+              <li class="position-relative"><i class="fa-solid fa-envelope"></i> <a
+                  href="mailto:sales@aarohn.com">sales@aarohn.com</a></li>
+              <li class="position-relative mb-0"><i class="fa-solid fa-phone"></i> <a href="tel:+919999050937">+91
+                  9999050937</a></li>
             </ul>
           </div>
         </div>
@@ -336,71 +366,70 @@ New Delhi - 110015</li>
   <script>
     new WOW().init();
   </script>
- <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919999050937"
-   class="whatsapp-float"
-   target="_blank">
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919999050937" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
-</a>
+  </a>
 
-<style>
-.whatsapp-float{
-    position:fixed;
-    bottom:25px;
-    left:25px;
-    width:60px;
-    height:60px;
-    background:#25D366;
-    color:#fff;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:32px;
-    text-decoration:none;
-    box-shadow:0 4px 12px rgba(0,0,0,0.25);
-    z-index:99999;
-    transition:all .3s ease;
-}
-
-.whatsapp-float:hover{
-    color:#fff;
-    transform:scale(1.1);
-    text-decoration:none;
-}
-
-.whatsapp-float::after{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    background:rgba(37,211,102,.4);
-    z-index:-1;
-    animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-    0%{
-        transform:scale(1);
-        opacity:1;
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      left: 25px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      z-index: 99999;
+      transition: all .3s ease;
     }
-    100%{
-        transform:scale(1.8);
-        opacity:0;
-    }
-}
 
-@media(max-width:768px){
-    .whatsapp-float{
-        width:55px;
-        height:55px;
-        font-size:28px;
-        right:15px;
-        bottom:15px;
+    .whatsapp-float:hover {
+      color: #fff;
+      transform: scale(1.1);
+      text-decoration: none;
     }
-}
-</style>
+
+    .whatsapp-float::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(37, 211, 102, .4);
+      z-index: -1;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.8);
+        opacity: 0;
+      }
+    }
+
+    @media(max-width:768px) {
+      .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+  </style>
 </body>
 
 </html>

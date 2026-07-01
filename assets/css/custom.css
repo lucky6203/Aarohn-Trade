@@ -1087,6 +1087,65 @@ span.blue-text {
     background-color: var(--navy-blue);
 }
 
+.footer-con .newsletter-btn {
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+.footer-con .newsletter-btn a {
+    width: 346px;
+    text-align: center;
+    background-color: var(--sky-color);
+    height: 50px;
+    border-radius: 25px;
+    color: var(--secondary--color);
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-con .newsletter-btn a:hover {
+    background-color: var(--navy-blue);
+    color: var(--secondary--color);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-con .newsletter-btn {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footer-con .newsletter-btn {
+        margin: 0;
+        width: 100%;
+    }
+    .footer-con .newsletter-btn a {
+        width: 100%;
+        font-size: 16px;
+        height: 46px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-con .newsletter-btn {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-con .newsletter-btn a {
+        width: 100%;
+        font-size: 14px;
+        height: 44px;
+    }
+}
+
 .footer-con .footer-inner-con figure {
     margin-bottom: 28px;
 }
