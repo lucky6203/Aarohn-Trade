@@ -65,6 +65,47 @@
       margin-right: 4% !important;
     }
 
+    .about-hero-img {
+      width: 100%;
+      max-width: 550px;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+
+    @media (min-width: 992px) {
+      .about-banner .wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: calc(50% - 675px) !important;
+        padding-right: 0 !important;
+      }
+      .about-banner .row {
+        margin-right: 0 !important;
+      }
+      .about-banner .col-lg-8 {
+        padding-right: 0 !important;
+      }
+      .about-hero-img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+      }
+      .creativity-con .creative-img {
+        width: 790px !important;
+        height: 480px !important;
+        object-fit: cover;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+      .about-banner .wrapper {
+        padding-left: 30px !important;
+      }
+    }
+
     @media (max-width: 575px) {
       .about-silver-con .about-vm-con .vm-inner1 {
         width: 100% !important;
@@ -90,7 +131,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
           <figure class="mb-0">
-            <img src="assets/images/logo_icon.png" alt="Aarohn Trade Overseas Logo" style="height:90px; width:auto; max-width:120px; object-fit:contain; display:block; margin-top:-10px;">
+            <img src="assets/images/logo.jpeg" alt="Aarohn Trade Overseas Logo" style="height:90px; width:auto; max-width:120px; object-fit:contain; display:block; margin-top:-10px;">
           </figure>
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -145,7 +186,7 @@
     <div class="row align-items-center">
 
       <!-- Text -->
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h1 class="text-uppercase mb-4">
           About <span class="d-inline-block blue-text">Us</span>
         </h1>
@@ -158,11 +199,11 @@
       </div>
 
       <!-- Image -->
-      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <div class="col-lg-8 text-right mt-4 mt-lg-0 pr-lg-0">
         <img
           src="assets/images/About Image_847x480.png"
           alt="banner-vector-img"
-          style="width:100%; max-width:550px; height:auto; display:block; margin:auto;">
+          class="about-hero-img img-fluid">
       </div>
 
     </div>
@@ -215,7 +256,7 @@
       <div class="wrapper1200">
         <div class="row sub-silver-con">
           <div class="col-lg-6">
-            <figure class="position-relative silver-img"><img src="assets/images/about-silver-img.png"
+            <figure class="position-relative silver-img"><img src="assets/images/Relaible global trade partner 870x480 (1).png"
                 class="position-absolute wow bounceInUp" data-wow-duration="2s" alt="about-img"></figure>
             <!-- col-lg-6 -->
           </div>
@@ -326,7 +367,7 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
             <!-- col -->
           </div>
           <div class="col-lg-7 wow bounceInUp" data-wow-duration="2s">
-            <figure class="position-relative"><img src="assets/images/creative-image.png"
+            <figure class="position-relative"><img src="assets/images/Why Choose Aarohn (1).png"
                 class="creative-img position-absolute" alt="about-img"></figure>
             <!-- col -->
           </div>
@@ -347,25 +388,22 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
       <div class="wrapper1200">
         <div class="row wow bounceInUp" data-wow-duration="2s">
           <div class="m-auto col-xl-10 col-lg-12">
-            <h2 class="wow bounceInUp" data-wow-duration="2s">What People say About <br>
-              <span class="d-inline-block blue-text">Aarohn Trade Overseas</span>
+            <h2 class="wow bounceInUp" data-wow-duration="2s">What Our Partners Say About <br>
+              <span class="d-inline-block blue-text">Aarohn</span>
             </h2>
             <div class="review-inner-con text-center">
               <div class="review-carousel owl-carousel wow bounceInUp" data-wow-duration="2s">
                 <div class="item">
                   <div class="imgz-wrapper position-relative">
                     <figure class="review-person position-relative">
-                      <img src="assets/images/review-person.png" class="img-fluid position-absolute" alt="review-person">
+                      <img src="assets/images/mal3.jpeg" class="img-fluid position-absolute" alt="review-person">
                     </figure>
                     <i class="fa fa-quote-right" aria-hidden="true"></i>
                     <!-- imgz wraqpper -->
                   </div>
-                  <span class="reviewer-name d-block">Smantha Johnson</span>
-                  <h4 class="">“Great Temwork”</h4>
-                  <p class="font-size-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
-                    tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo.</p>
+                  <span class="reviewer-name d-block">Amelia</span>
+                  
+                  <p class="font-size-14 mb-0">Aarohn streamlined our entire import process. Their expertise in HSN compliance and customs clearance eliminated all our transit delays. A highly reliable global trade partner.</p>
 
 
                   <!-- item -->
@@ -373,17 +411,14 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
                 <div class="item">
                   <div class="imgz-wrapper position-relative">
                     <figure class="review-person position-relative">
-                      <img src="assets/images/review-person.png" class="img-fluid position-absolute" alt="review-person">
+                      <img src="assets/images/man2.jpg" class="img-fluid position-absolute" alt="review-person">
                     </figure>
                     <i class="fa fa-quote-right" aria-hidden="true"></i>
                     <!-- imgz wraqpper -->
                   </div>
-                  <span class="reviewer-name d-block">Smantha Johnson</span>
-                  <h4 class="">“Great Temwork”</h4>
-                  <p class="font-size-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
-                    tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo.</p>
+                  <span class="reviewer-name d-block">George</span>
+                  
+                  <p class="font-size-14 mb-0">Finding verified commodity suppliers was a challenge until we partnered with Aarohn. Their global sourcing network and secure supply chain logistics completely transformed our business operations.</p>
 
 
                   <!-- item -->
@@ -391,17 +426,14 @@ We specialise in sourcing, processing, and bulk supply of premium agricultural e
                 <div class="item">
                   <div class="imgz-wrapper position-relative">
                     <figure class="review-person position-relative">
-                      <img src="assets/images/review-person.png" class="img-fluid position-absolute" alt="review-person">
+                      <img src="assets/images/man1.jpg" class="img-fluid position-absolute" alt="review-person">
                     </figure>
                     <i class="fa fa-quote-right" aria-hidden="true"></i>
                     <!-- imgz wraqpper -->
                   </div>
                   <span class="reviewer-name d-block">Smantha Johnson</span>
-                  <h4 class="">“Great Temwork”</h4>
-                  <p class="font-size-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
-                    tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo.</p>
+                  
+                  <p class="font-size-14 mb-0">Exceptional service from a dedicated team. Aarohn handles our cross-border freight logistics flawlessly, consistently ensuring on-time delivery and protected profit margins on every single shipment.</p>
 
 
                   <!-- item -->
