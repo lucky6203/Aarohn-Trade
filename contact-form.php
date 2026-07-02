@@ -8,7 +8,7 @@ $phone= $_POST['phone'];
 if(isset($fname) && isset($email))
 {
 	global $to_email,$vpb_message_body,$headers;
-	$to_email="info@savingforenergy.com";
+	$to_email="sales@aarohn.com";
 	$email_subject="Inquiry From Contact Page";
 	$vpb_message_body = nl2br("Dear Admin,\n
 	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
